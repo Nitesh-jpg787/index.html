@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StyleNest Clothing</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Outfit', sans-serif;
+      background-color: #fdfdfd;
+      color: #333;
+    }
+    header {
+      background-color: #222;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+    nav a {
+      color: white;
+      margin-left: 1rem;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
+      height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+    }
+    .hero h2 {
+      font-size: 3rem;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 1rem;
+      border-radius: 8px;
+    }
+    .section {
+      padding: 4rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .section h3 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+    .product {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-align: center;
+    }
+    .product img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+    .product h4 {
+      margin: 1rem 0 0.5rem;
+    }
+    .product p {
+      margin: 0 0 1rem;
+      color: #777;
+    }
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+      margin-top: 4rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>StyleNest</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#collection">Collection</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <h2>Discover Your Style</h2>
+  </section>
+
+  <section class="section" id="collection">
+    <h3>Our Latest Collection</h3>
+    <div class="products">
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=800&q=80" alt="Men's Jacket" />
+        <h4>Men's Jacket</h4>
+        <p>$120</p>
+      </div>
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1520975911041-3d2e4d42f34f?auto=format&fit=crop&w=800&q=80" alt="Women's Dress" />
+        <h4>Women's Dress</h4>
+        <p>$89</p>
+      </div>
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1564463830742-04ac9230d2b1?auto=format&fit=crop&w=800&q=80" alt="Hoodie" />
+        <h4>Casual Hoodie</h4>
+        <p>$65</p>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <p>Contact us at support@stylenest.com | &copy; 2025 StyleNest</p>
+  </footer>
+</body>
+</html>
